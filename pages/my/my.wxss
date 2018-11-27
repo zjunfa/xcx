@@ -1,0 +1,13 @@
+/* pages/my/my.wxss */
+
+/* 类似于css */
+/* https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html */
+text{
+  color: red;
+  background: limegreen;
+  margin-right: 10px;
+}
+view{
+  height: 200px;
+  background:#ff0;
+}

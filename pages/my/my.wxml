@@ -1,0 +1,33 @@
+<!--pages/my/my.wxml-->
+
+<!-- 使用的xml语法。有开始必须有结尾 -->
+<!-- https://developers.weixin.qq.com/miniprogram/dev/component/view.html -->
+<!-- <text>{{msg}}</text> -->
+<!-- index代表数组的索引值  item代表的数组对应的值 -->
+<!-- <text wx:for="{{list}}">{{index}}-{{item}}</text> -->
+<!-- index取名字 -->
+<!-- <text wx:for="{{list}}" wx:for-index="ind">{{ind}}</text> -->
+<!-- item取名字 -->
+<!-- <text wx:for="{{list}}" wx:for-item="itm">{{itm}}</text> -->
+
+<!--遍历对象到，index指的对象属性 item指的是属性的值  -->
+<!-- <text wx:for="{{stu}}" >{{index}}-{{item}}</text> -->
+
+
+<!-- 绑定事件 tap  bind+事件名字
+https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html -->
+{{msg}}
+<button size='mini' type='warn' bindtap='change'>按钮</button>
+<text wx:if="{{show}}">{{msg}}</text>
+
+<!-- 冒泡 catch+事件名 -->
+	<view bindtap='click'>
+		<button type='primary' size='mini' catchtap='click'>按钮</button>
+	</view>
+
+<!-- 事件传参 -->
+<!-- 
+  传递参数：标签增加属性  data-事件内部获取的属性=“传递的值”
+  接收参数：e.target.dataset
+ -->
+<text wx:for="{{list}}" catchtap='send' data-item='zsh' data-index='{{index}}'>{{item}}</text>

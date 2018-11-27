@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/info/info",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs",
+    
+   
+    "pages/service/service"
+  ],
+  
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1fbba6",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "选课",
+        "iconPath":"images/selected.png",
+        "selectedIconPath":"images/selected_s.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "服务",
+        "iconPath": "images/service.png",
+        "selectedIconPath": "images/service_s.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "消息",
+        "iconPath": "images/info.png",
+        "selectedIconPath": "images/info_s.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_s.png"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1fbba6",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle":"white"
+  }
+}

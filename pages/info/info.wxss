@@ -1,0 +1,10 @@
+/* pages/info/info.wxss */
+text{
+  height: 20px;
+  background: red;
+  width:750rpx;
+  display: block;
+}
+image{
+  width: 750rpx
+}
